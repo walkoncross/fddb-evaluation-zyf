@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_PropertySheetDisplayName>opencv300_debug</_PropertySheetDisplayName>
+    <LibraryPath>D:\OpenCV\OpenCV300_vs2013\bin\Debug;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>D:\OpenCV\OpenCV300_vs2013\bin\Debug;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalOptions>/D _CRT_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\Software\OpenCV\opencv-3.0.0\modules\video\include;D:\Software\OpenCV\opencv-3.0.0\modules\imgproc\include;D:\Software\OpenCV\opencv-3.0.0\modules\core\include;D:\Software\OpenCV\opencv-3.0.0\modules\hal\include;D:\Software\OpenCV\opencv-3.0.0\modules\calib3d\include;D:\Software\OpenCV\opencv-3.0.0\modules\features2d\include;D:\Software\OpenCV\opencv-3.0.0\modules\highgui\include;D:\Software\OpenCV\opencv-3.0.0\modules\videoio\include;D:\Software\OpenCV\opencv-3.0.0\modules\imgcodecs\include;D:\Software\OpenCV\opencv-3.0.0\modules\photo\include;D:\Software\OpenCV\opencv-3.0.0\modules\ml\include;D:\Software\OpenCV\opencv-3.0.0\modules\flann\include;D:\Software\OpenCV\opencv-3.0.0\modules\objdetect\include;D:\Software\OpenCV\opencv-3.0.0\modules\shape\include;D:\Software\OpenCV\opencv-3.0.0\modules\videostab\include;D:\Software\OpenCV\opencv-3.0.0\modules\stitching\include;D:\Software\OpenCV\opencv-3.0.0\include;D:\Software\OpenCV\opencv-3.0.0\3rdparty\ippicv\unpack\ippicv_win\include;D:\OpenCV\OpenCV300_vs2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;D:\OpenCV\OpenCV300_vs2013\lib\Debug\opencv_stitching300d.lib;D:\OpenCV\OpenCV300_vs2013\lib\Debug\opencv_videostab300d.lib;D:\OpenCV\OpenCV300_vs2013\lib\Debug\opencv_shape300d.lib;D:\OpenCV\OpenCV300_vs2013\lib\Debug\opencv_objdetect300d.lib;D:\OpenCV\OpenCV300_vs2013\lib\Debug\opencv_photo300d.lib;D:\OpenCV\OpenCV300_vs2013\lib\Debug\opencv_calib3d300d.lib;D:\OpenCV\OpenCV300_vs2013\lib\Debug\opencv_features2d300d.lib;D:\OpenCV\OpenCV300_vs2013\lib\Debug\opencv_flann300d.lib;D:\OpenCV\OpenCV300_vs2013\lib\Debug\opencv_highgui300d.lib;D:\OpenCV\OpenCV300_vs2013\lib\Debug\opencv_videoio300d.lib;D:\OpenCV\OpenCV300_vs2013\lib\Debug\opencv_imgcodecs300d.lib;D:\OpenCV\OpenCV300_vs2013\lib\Debug\opencv_ml300d.lib;D:\OpenCV\OpenCV300_vs2013\lib\Debug\opencv_video300d.lib;D:\OpenCV\OpenCV300_vs2013\lib\Debug\opencv_imgproc300d.lib;D:\OpenCV\OpenCV300_vs2013\lib\Debug\opencv_core300d.lib;D:\OpenCV\OpenCV300_vs2013\lib\Debug\opencv_hal300d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

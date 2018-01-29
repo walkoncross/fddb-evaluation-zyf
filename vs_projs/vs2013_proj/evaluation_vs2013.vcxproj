@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CD902772-DF66-48AC-97D3-9905BD5F7973}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>evaluation_vs2013</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\opencv_props\opencv100.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\opencv_props\opencv100.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\OpenCV\OpenCV100\cv\include;C:\OpenCV\OpenCV100\cvaux\include;C:\OpenCV\OpenCV100\cxcore\include;C:\OpenCV\OpenCV100\otherlibs\highgui;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\OpenCV\OpenCV100\lib;C:\OpenCV\OpenCV100\otherlibs;C:\OpenCV\OpenCV100\otherlibs\highgui;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\OpenCV\OpenCV100\cv\include;C:\OpenCV\OpenCV100\cvaux\include;C:\OpenCV\OpenCV100\cxcore\include;C:\OpenCV\OpenCV100\otherlibs\highgui;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\OpenCV\OpenCV100\lib;C:\OpenCV\OpenCV100\otherlibs;C:\OpenCV\OpenCV100\otherlibs\highgui;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;cxcore.lib;cv.lib;cvaux.lib;highgui.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;cxcore.lib;cv.lib;cvaux.lib;highgui.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\evaluation_windows_vs\common.hpp" />
+    <ClInclude Include="..\..\evaluation_windows_vs\EllipseR.hpp" />
+    <ClInclude Include="..\..\evaluation_windows_vs\EllipsesSingleImage.hpp" />
+    <ClInclude Include="..\..\evaluation_windows_vs\getopt.h" />
+    <ClInclude Include="..\..\evaluation_windows_vs\Hungarian.hpp" />
+    <ClInclude Include="..\..\evaluation_windows_vs\Matching.hpp" />
+    <ClInclude Include="..\..\evaluation_windows_vs\MatchPair.hpp" />
+    <ClInclude Include="..\..\evaluation_windows_vs\OpenCVUtils.hpp" />
+    <ClInclude Include="..\..\evaluation_windows_vs\RectangleR.hpp" />
+    <ClInclude Include="..\..\evaluation_windows_vs\RectanglesSingleImage.hpp" />
+    <ClInclude Include="..\..\evaluation_windows_vs\Region.hpp" />
+    <ClInclude Include="..\..\evaluation_windows_vs\RegionsSingleImage.hpp" />
+    <ClInclude Include="..\..\evaluation_windows_vs\Results.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\evaluation_windows_vs\EllipseR.cpp" />
+    <ClCompile Include="..\..\evaluation_windows_vs\EllipsesSingleImage.cpp" />
+    <ClCompile Include="..\..\evaluation_windows_vs\evaluate.cpp" />
+    <ClCompile Include="..\..\evaluation_windows_vs\getopt.c" />
+    <ClCompile Include="..\..\evaluation_windows_vs\Hungarian.cpp" />
+    <ClCompile Include="..\..\evaluation_windows_vs\Matching.cpp" />
+    <ClCompile Include="..\..\evaluation_windows_vs\MatchPair.cpp" />
+    <ClCompile Include="..\..\evaluation_windows_vs\OpenCVUtils.cpp" />
+    <ClCompile Include="..\..\evaluation_windows_vs\RectangleR.cpp" />
+    <ClCompile Include="..\..\evaluation_windows_vs\RectanglesSingleImage.cpp" />
+    <ClCompile Include="..\..\evaluation_windows_vs\Region.cpp" />
+    <ClCompile Include="..\..\evaluation_windows_vs\RegionsSingleImage.cpp" />
+    <ClCompile Include="..\..\evaluation_windows_vs\Results.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

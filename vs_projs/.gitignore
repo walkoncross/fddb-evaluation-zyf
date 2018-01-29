@@ -1,0 +1,5 @@
+*.bak
+*.db
+*/Debug/
+*/.vs/
+*/Release/
