@@ -43,13 +43,9 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\OpenCV\OpenCV100\cv\include;C:\OpenCV\OpenCV100\cvaux\include;C:\OpenCV\OpenCV100\cxcore\include;C:\OpenCV\OpenCV100\otherlibs\highgui;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\OpenCV\OpenCV100\lib;C:\OpenCV\OpenCV100\otherlibs;C:\OpenCV\OpenCV100\otherlibs\highgui;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>C:\OpenCV\OpenCV100\cv\include;C:\OpenCV\OpenCV100\cvaux\include;C:\OpenCV\OpenCV100\cxcore\include;C:\OpenCV\OpenCV100\otherlibs\highgui;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\OpenCV\OpenCV100\lib;C:\OpenCV\OpenCV100\otherlibs;C:\OpenCV\OpenCV100\otherlibs\highgui;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
