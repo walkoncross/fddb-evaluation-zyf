@@ -18,7 +18,7 @@ OpenCV 1.0 (http://sourceforge.net/projects/opencvlibrary/)
 Please refer to [evaluation_linux/README.txt](evaluation_linux/README.txt).
 
 ### Windoes Visual Studio
-1. Replace "$(OPENCV100)" by the correct path of OpenCV 1.0 root-dir on your computer. 
+1. Replace "$(OPENCV100)" in [vs_projs/opencv_props/opencv100.props](vs_projs/opencv_props/opencv100.props) by the correct path of OpenCV 1.0 root-dir on your computer. 
 1. Open vs-projs/vs201x_poroj/*.sln.
 
 or
